@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories | Loveloom</title>
+    <link rel="stylesheet" href="memories.css" />
+  </head>
+
+  <body class="memories-body">
+    <nav class="memories-navbar">
+      <div class="memories-logo">
+        <span class="memories-logo-heart">♥</span>
+        <span class="memories-logo-text">Loveloom</span>
+      </div>
+
+      <div class="memories-nav-links" id="memoriesNavLinks">
+        <a class="memories-nav-link" href="index.html">Home</a>
+        <a class="memories-nav-link" href="ourstory.html">Our Story</a>
+        <a class="memories-nav-link" href="loveletter.html">Love Letter</a>
+        <a class="memories-nav-link memories-nav-active" href="memories.html"
+          >Memories</a
+        >
+        <a class="memories-nav-link" href="lovecounter.html">Love Counter</a>
+        <a class="memories-nav-link" href="foryou.html">For You</a>
+        <a class="memories-nav-link" href="quiz.html">Quiz</a>
+      </div>
+
+      <div class="memories-nav-right">
+        <span class="memories-search">⌕</span>
+        <span class="memories-nav-heart">♡</span>
+        <span class="memories-user">♥</span>
+      </div>
+
+      <button class="memories-menu" id="memoriesMenu" type="button">☰</button>
+    </nav>
+
+    <main class="memories-main">
+      <div class="memories-bg-heart memories-bg-heart-one">♡</div>
+      <div class="memories-bg-heart memories-bg-heart-two">♥</div>
+      <div class="memories-bg-heart memories-bg-heart-three">♡</div>
+      <div class="memories-bg-heart memories-bg-heart-four">♥</div>
+
+      <section class="memories-header">
+        <div class="memories-title-row">
+          <span class="memories-title-heart">♥</span>
+
+          <h1 class="memories-title">Our Memories</h1>
+
+          <span class="memories-title-heart">♥</span>
+        </div>
+
+        <p class="memories-subtitle">
+          Small moments, big happiness
+          <span class="memories-subtitle-heart">♥</span>
+        </p>
+      </section>
+
+      <section class="memories-filter-area">
+        <button
+          class="memories-filter memories-filter-active"
+          data-filter="all"
+          type="button"
+        >
+          All
+        </button>
+
+        <button class="memories-filter" data-filter="photos" type="button">
+          Photos
+        </button>
+
+        <button class="memories-filter" data-filter="videos" type="button">
+          Videos
+        </button>
+
+        <button class="memories-filter" data-filter="dates" type="button">
+          Dates
+        </button>
+      </section>
+
+      <section class="memories-gallery" id="memoriesGallery">
+        <div
+          class="memories-card memories-card-large"
+          data-type="image"
+          data-category="dates"
+          data-source="image/img4.jpg"
+          data-title="Our First Date"
+          data-date="2023.06.20"
+        >
+          <div class="memories-media">
+            <img
+              class="memories-image"
+              src="image/img4.jpg"
+              alt="Our First Date"
+            />
+          </div>
+
+          <div class="memories-card-info">
+            <span class="memories-card-category">Date</span>
+            <h2 class="memories-card-title">Our First Date</h2>
+            <span class="memories-card-date">2023.06.20</span>
+          </div>
+
+          <span class="memories-card-heart">♥</span>
+        </div>
+        <div
+          class="memories-card"
+          data-type="image"
+          data-category="photos"
+          data-source="image/img2.jpg"
+          data-title="Sweet Moment"
+          data-date="With You"
+        >
+          <div class="memories-media">
+            <img
+              class="memories-image"
+              src="image/img2.jpg"
+              alt="Sweet Moment"
+            />
+          </div>
+
+          <div class="memories-card-info">
+            <span class="memories-card-category">Photo</span>
+            <h2 class="memories-card-title">Sweet Moment</h2>
+            <span class="memories-card-date">With You ♡</span>
+          </div>
+
+          <span class="memories-card-heart">♥</span>
+        </div>
+
+        <div
+          class="memories-card"
+          data-type="image"
+          data-category="photos"
+          data-source="image/img3.jpg"
+          data-title="Beautiful Moment"
+          data-date="Forever"
+        >
+          <div class="memories-media">
+            <img
+              class="memories-image"
+              src="image/img3.jpg"
+              alt="Beautiful Moment"
+            />
+          </div>
+
+          <div class="memories-card-info">
+            <span class="memories-card-category">Photo</span>
+            <h2 class="memories-card-title">Beautiful Moment</h2>
+            <span class="memories-card-date">Forever ♡</span>
+          </div>
+
+          <span class="memories-card-heart">♥</span>
+        </div>
+
+        <div
+          class="memories-card"
+          data-type="image"
+          data-category="photos"
+          data-source="image/img4.jpg"
+          data-title="Beautiful Place"
+          data-date="Anywhere With You"
+        >
+          <div class="memories-media">
+            <img
+              class="memories-image"
+              src="image/img4.jpg"
+              alt="Beautiful Place"
+            />
+          </div>
+
+          <div class="memories-card-info">
+            <span class="memories-card-category">Photo</span>
+            <h2 class="memories-card-title">Beautiful Place</h2>
+            <span class="memories-card-date">Anywhere With You</span>
+          </div>
+
+          <span class="memories-card-heart">♥</span>
+        </div>
+
+        <div
+          class="memories-card"
+          data-type="image"
+          data-category="dates"
+          data-source="image/img1.jpg"
+          data-title="Happy Day"
+          data-date="Our Little Date"
+        >
+          <div class="memories-media">
+            <img class="memories-image" src="image/img1.jpg" alt="Happy Day" />
+          </div>
+
+          <div class="memories-card-info">
+            <span class="memories-card-category">Date</span>
+            <h2 class="memories-card-title">Happy Day</h2>
+            <span class="memories-card-date">Our Little Date</span>
+          </div>
+
+          <span class="memories-card-heart">♥</span>
+        </div>
+
+        <div
+          class="memories-card memories-video-card"
+          data-type="video"
+          data-category="videos"
+          data-source="video/vd1.mp4"
+          data-title="Our Little Moment"
+          data-date="Together ♡"
+        >
+          <div class="memories-media">
+            <video
+              class="memories-video"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            >
+              <source src="video/vd1.mp4" type="video/mp4" />
+            </video>
+
+            <div class="memories-video-badge">▶</div>
+          </div>
+
+          <div class="memories-card-info">
+            <span class="memories-card-category">Video</span>
+            <h2 class="memories-card-title">Our Little Moment</h2>
+            <span class="memories-card-date">Together ♡</span>
+          </div>
+
+          <span class="memories-card-heart">♥</span>
+        </div>
+
+        <div
+          class="memories-card memories-video-card"
+          data-type="video"
+          data-category="videos"
+          data-source="video/vd1.mp4"
+          data-title="A Day With You"
+          data-date="Special Memory"
+        >
+          <div class="memories-media">
+            <video
+              class="memories-video"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            >
+              <source src="video/vd1.mp4" type="video/mp4" />
+            </video>
+
+            <div class="memories-video-badge">▶</div>
+          </div>
+
+          <div class="memories-card-info">
+            <span class="memories-card-category">Video</span>
+            <h2 class="memories-card-title">A Day With You</h2>
+            <span class="memories-card-date">Special Memory</span>
+          </div>
+
+          <span class="memories-card-heart">♥</span>
+        </div>
+
+        <div
+          class="memories-card"
+          data-type="image"
+          data-category="photos"
+          data-source="image/img1.jpg"
+          data-title="Forever Memory"
+          data-date="Always"
+        >
+          <div class="memories-media">
+            <img
+              class="memories-image"
+              src="image/img1.jpg"
+              alt="Forever Memory"
+            />
+          </div>
+
+          <div class="memories-card-info">
+            <span class="memories-card-category">Photo</span>
+            <h2 class="memories-card-title">Forever Memory</h2>
+            <span class="memories-card-date">Always ♡</span>
+          </div>
+
+          <span class="memories-card-heart">♥</span>
+        </div>
+      </section>
+
+      <section class="memories-bottom-message">
+        <span class="memories-bottom-heart">♥</span>
+
+        <span class="memories-bottom-text">
+          Every memory becomes more beautiful with you
+        </span>
+
+        <span class="memories-bottom-heart">♥</span>
+      </section>
+    </main>
+
+    <div class="memories-viewer" id="memoriesViewer">
+      <div class="memories-viewer-box">
+        <button
+          class="memories-viewer-close"
+          id="memoriesViewerClose"
+          type="button"
+        >
+          ×
+        </button>
+
+        <button
+          class="memories-viewer-prev"
+          id="memoriesViewerPrev"
+          type="button"
+        >
+          ‹
+        </button>
+
+        <div class="memories-viewer-media">
+          <img
+            class="memories-viewer-image"
+            id="memoriesViewerImage"
+            src=""
+            alt="Memory"
+          />
+
+          <video
+            class="memories-viewer-video"
+            id="memoriesViewerVideo"
+            controls
+            playsinline
+          ></video>
+        </div>
+
+        <button
+          class="memories-viewer-next"
+          id="memoriesViewerNext"
+          type="button"
+        >
+          ›
+        </button>
+
+        <div class="memories-viewer-info">
+          <span class="memories-viewer-heart">♥</span>
+
+          <span class="memories-viewer-date" id="memoriesViewerDate"> </span>
+
+          <h2 class="memories-viewer-title" id="memoriesViewerTitle"></h2>
+
+          <span class="memories-viewer-count" id="memoriesViewerCount"> </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="memories.js"></script>
+  </body>
+</html>

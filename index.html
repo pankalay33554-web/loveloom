@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loveloom | Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="home-body">
+    <div class="home-page">
+      <header class="home-navbar">
+        <a href="index.html" class="home-logo">
+          <span class="home-logo-heart">♥</span>
+          <span class="home-logo-text">Loveloom</span>
+        </a>
+
+        <nav class="home-nav">
+          <a href="index.html" class="home-nav-link home-nav-active"> Home </a>
+
+          <a href="ourstory.html" class="home-nav-link"> Our Story </a>
+
+          <a href="loveletter.html" class="home-nav-link"> Love Letter </a>
+
+          <a href="memories.html" class="home-nav-link"> Memories </a>
+
+          <a href="lovecounter.html" class="home-nav-link"> Love Counter </a>
+
+          <a href="foryou.html" class="home-nav-link"> For You </a>
+
+          <a href="quiz.html" class="home-nav-link"> Quiz </a>
+        </nav>
+
+        <div class="home-nav-actions">
+          <button class="home-icon-button" id="homeSearchButton">⌕</button>
+
+          <button class="home-icon-button" id="homeHeartButton">♡</button>
+
+          <button class="home-profile-button">●</button>
+        </div>
+
+        <button class="home-mobile-button" id="homeMobileButton">☰</button>
+      </header>
+
+      <main class="home-main">
+        <section class="home-hero">
+          <div class="home-hero-background"></div>
+
+          <div class="home-cloud home-cloud-one"></div>
+          <div class="home-cloud home-cloud-two"></div>
+          <div class="home-cloud home-cloud-three"></div>
+
+          <div class="home-hero-content">
+            <div class="home-hero-text">
+              <div class="home-mini-title">♥ OUR LITTLE WORLD ♥</div>
+
+              <h1 class="home-hero-title">
+                Where Every
+                <span>Love Story Blooms</span>
+              </h1>
+
+              <p class="home-hero-subtitle">You & Me, Always</p>
+
+              <p class="home-hero-description">
+                A beautiful journey of love,<br />
+                memories and dreams.
+              </p>
+
+              <a href="ourstory.html" class="home-start-button">
+                <span>Start Exploring</span>
+                <span class="home-button-arrow">→</span>
+              </a>
+            </div>
+
+            <div class="home-hero-right">
+              <div class="home-script-text">
+                Together<br />
+                is my favorite<br />
+                place
+                <span>♡</span>
+              </div>
+
+              <div class="home-heart home-heart-one">♥</div>
+
+              <div class="home-heart home-heart-two">♡</div>
+
+              <div class="home-heart home-heart-three">♥</div>
+
+              <div class="home-couple-frame">
+                <div class="home-couple-image-wrap">
+                  <img
+                    src="image/img2.jpg"
+                    alt="Loveloom couple"
+                    class="home-couple-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-flower-decoration home-flower-left">✿ ❀ ✿</div>
+
+          <div class="home-flower-decoration home-flower-right">❀ ✿ ❀</div>
+
+          <div class="home-bottom-flower">✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿</div>
+        </section>
+      </main>
+    </div>
+
+    <div class="home-search-popup" id="homeSearchPopup">
+      <div class="home-popup-box">
+        <button class="home-popup-close" id="homeSearchClose">×</button>
+
+        <div class="home-popup-icon">⌕</div>
+
+        <h2 class="home-popup-title">Find a Memory</h2>
+
+        <p class="home-popup-text">
+          Search something special in our little world.
+        </p>
+
+        <div class="home-search-box">
+          <input
+            type="text"
+            id="homeSearchInput"
+            class="home-search-input"
+            placeholder="Search..."
+          />
+
+          <button class="home-search-submit" id="homeSearchSubmit">
+            Search
+          </button>
+        </div>
+
+        <div class="home-search-result" id="homeSearchResult"></div>
+      </div>
+    </div>
+
+    <div class="home-heart-message" id="homeHeartMessage">
+      <div class="home-heart-message-box">
+        <span class="home-message-heart">♥</span>
+        <p class="home-message-text">You are my favorite place.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

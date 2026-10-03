@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story | Loveloom</title>
+    <link rel="stylesheet" href="ourstory.css" />
+  </head>
+  <body class="story-body">
+    <nav class="story-navbar">
+      <div class="story-logo">Loveloom ♡</div>
+
+      <div class="story-nav-links">
+        <a class="story-nav-link" href="index.html">Home</a>
+        <a class="story-nav-link story-active" href="ourstory.html"
+          >Our Story</a
+        >
+        <a class="story-nav-link" href="loveletter.html">Love Letter</a>
+        <a class="story-nav-link" href="memories.html">Memories</a>
+        <a class="story-nav-link" href="lovecounter.html">Love Counter</a>
+        <a class="story-nav-link" href="foryou.html">For You</a>
+        <a class="story-nav-link" href="quiz.html">Quiz</a>
+      </div>
+
+      <button class="story-menu-btn" id="storyMenuBtn">☰</button>
+    </nav>
+
+    <main class="story-main">
+      <section class="story-header">
+        <span class="story-small-heart">♥</span>
+        <h1 class="story-title">Our Story</h1>
+        <span class="story-small-heart">♥</span>
+
+        <p class="story-subtitle">
+          Every moment with you is a beautiful chapter ♥
+        </p>
+      </section>
+
+      <section class="story-timeline">
+        <div class="story-card">
+          <div class="story-card-image">
+            <img
+              class="story-card-photo"
+              src="image/img2.jpg"
+              alt="Our First Meet"
+              loading="lazy"
+            />
+            <button
+              class="story-view-btn"
+              data-image="image/img2.jpg"
+              data-title="Our First Meet"
+              data-text="The beautiful moment when our story began."
+            >
+              View Photo
+            </button>
+          </div>
+
+          <div class="story-card-content">
+            <span class="story-card-number">01</span>
+            <h2 class="story-card-title">Our First Meet</h2>
+            <p class="story-card-text">
+              The beautiful moment when our story began.
+            </p>
+            <span class="story-card-date">The Beginning ♡</span>
+          </div>
+        </div>
+
+        <div class="story-connector">
+          <span class="story-connector-heart">♥</span>
+        </div>
+
+        <div class="story-card">
+          <div class="story-card-image">
+            <img
+              class="story-card-photo"
+              src="image/img3.jpg"
+              alt="Our First Date"
+              loading="lazy"
+            />
+            <button
+              class="story-view-btn"
+              data-image="image/img3.jpg"
+              data-title="Our First Date"
+              data-text="One of the sweetest memories we made together."
+            >
+              View Photo
+            </button>
+          </div>
+
+          <div class="story-card-content">
+            <span class="story-card-number">02</span>
+            <h2 class="story-card-title">Our First Date</h2>
+            <p class="story-card-text">
+              One of the sweetest memories we made together.
+            </p>
+            <span class="story-card-date">A Sweet Memory ♡</span>
+          </div>
+        </div>
+
+        <div class="story-connector">
+          <span class="story-connector-heart">♥</span>
+        </div>
+
+        <div class="story-card">
+          <div class="story-card-image">
+            <img
+              class="story-card-photo"
+              src="image/img3.jpg"
+              alt="Special Moments"
+              loading="lazy"
+            />
+            <button
+              class="story-view-btn"
+              data-image="image/img3.jpg"
+              data-title="Special Moments"
+              data-text="All the little moments that became unforgettable memories."
+            >
+              View Photo
+            </button>
+          </div>
+
+          <div class="story-card-content">
+            <span class="story-card-number">03</span>
+            <h2 class="story-card-title">Special Moments</h2>
+            <p class="story-card-text">
+              All the little moments that became unforgettable memories.
+            </p>
+            <span class="story-card-date">Forever Memories ♡</span>
+          </div>
+        </div>
+
+        <div class="story-connector">
+          <span class="story-connector-heart">♥</span>
+        </div>
+
+        <div class="story-card">
+          <div class="story-card-image">
+            <img
+              class="story-card-photo"
+              src="image/img2.jpg"
+              alt="Today"
+              loading="lazy"
+            />
+            <button
+              class="story-view-btn"
+              data-image="image/img2.jpg"
+              data-title="Today"
+              data-text="And our story is still being written, one beautiful day at a time."
+            >
+              View Photo
+            </button>
+          </div>
+
+          <div class="story-card-content">
+            <span class="story-card-number">04</span>
+            <h2 class="story-card-title">Today</h2>
+            <p class="story-card-text">
+              And our story is still being written, one beautiful day at a time.
+            </p>
+            <span class="story-card-date">Still Writing ♡</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="story-bottom-text">
+        <span class="story-bottom-heart">♥</span>
+        <span class="story-bottom-message"
+          >Our story is my favorite story.</span
+        >
+        <span class="story-bottom-heart">♥</span>
+      </div>
+    </main>
+
+    <div class="story-photo-modal" id="storyPhotoModal">
+      <div class="story-modal-box">
+        <button class="story-modal-close" id="storyModalClose">×</button>
+
+        <img
+          class="story-modal-photo"
+          id="storyModalPhoto"
+          src=""
+          alt="Memory"
+        />
+
+        <div class="story-modal-content">
+          <h2 class="story-modal-title" id="storyModalTitle"></h2>
+          <p class="story-modal-text" id="storyModalText"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="ourstory.js"></script>
+  </body>
+</html>

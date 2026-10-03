@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Counter | Loveloom</title>
+    <link rel="stylesheet" href="lovercounter.css" />
+  </head>
+
+  <body class="lovecounter-body">
+    <nav class="lovecounter-navbar">
+      <div class="lovecounter-logo">
+        <span class="lovecounter-logo-heart">♥</span>
+        <span class="lovecounter-logo-text">Loveloom</span>
+      </div>
+
+      <div class="lovecounter-nav-links" id="lovecounterNavLinks">
+        <a class="lovecounter-nav-link" href="index.html">Home</a>
+        <a class="lovecounter-nav-link" href="ourstory.html">Our Story</a>
+        <a class="lovecounter-nav-link" href="loveletter.html">Love Letter</a>
+        <a class="lovecounter-nav-link" href="memories.html">Memories</a>
+        <a
+          class="lovecounter-nav-link lovecounter-nav-active"
+          href="lovecounter.html"
+          >Love Counter</a
+        >
+        <a class="lovecounter-nav-link" href="foryou.html">For You</a>
+        <a class="lovecounter-nav-link" href="quiz.html">Quiz</a>
+      </div>
+
+      <div class="lovecounter-nav-right">
+        <span class="lovecounter-search">⌕</span>
+        <span class="lovecounter-nav-heart">♡</span>
+        <span class="lovecounter-user">♥</span>
+      </div>
+
+      <button class="lovecounter-menu" id="lovecounterMenu" type="button">
+        ☰
+      </button>
+    </nav>
+
+    <main class="lovecounter-main">
+      <div class="lovecounter-bg-heart lovecounter-bg-heart-one">♡</div>
+      <div class="lovecounter-bg-heart lovecounter-bg-heart-two">♥</div>
+      <div class="lovecounter-bg-heart lovecounter-bg-heart-three">♡</div>
+      <div class="lovecounter-bg-heart lovecounter-bg-heart-four">♥</div>
+
+      <section class="lovecounter-header">
+        <div class="lovecounter-title-row">
+          <span class="lovecounter-title-heart">♥</span>
+
+          <h1 class="lovecounter-title">Our Love Counter</h1>
+
+          <span class="lovecounter-title-heart">♥</span>
+        </div>
+
+        <p class="lovecounter-subtitle">
+          Every second with you is a second worth remembering
+          <span class="lovecounter-subtitle-heart">♥</span>
+        </p>
+      </section>
+
+      <section class="lovecounter-love-card">
+        <div class="lovecounter-card-decoration lovecounter-decoration-one">
+          ♡
+        </div>
+
+        <div class="lovecounter-card-decoration lovecounter-decoration-two">
+          ♥
+        </div>
+
+        <div class="lovecounter-photo-area">
+          <div class="lovecounter-photo-frame">
+            <img
+              class="lovecounter-photo"
+              src="image/img3.jpg"
+              alt="Our Love"
+            />
+          </div>
+
+          <div class="lovecounter-photo-heart">♥</div>
+        </div>
+
+        <div class="lovecounter-content">
+          <span class="lovecounter-small-title"> We have been together </span>
+
+          <h2 class="lovecounter-main-title">Loving You For</h2>
+
+          <div class="lovecounter-counter">
+            <div class="lovecounter-box">
+              <span class="lovecounter-number" id="lovecounterDays"> 0 </span>
+
+              <span class="lovecounter-label"> Days </span>
+            </div>
+
+            <div class="lovecounter-separator">:</div>
+            <div class="lovecounter-box">
+              <span class="lovecounter-number" id="lovecounterHours"> 00 </span>
+
+              <span class="lovecounter-label"> Hours </span>
+            </div>
+
+            <div class="lovecounter-separator">:</div>
+
+            <div class="lovecounter-box">
+              <span class="lovecounter-number" id="lovecounterMinutes">
+                00
+              </span>
+
+              <span class="lovecounter-label"> Minutes </span>
+            </div>
+
+            <div class="lovecounter-separator">:</div>
+
+            <div class="lovecounter-box">
+              <span class="lovecounter-number" id="lovecounterSeconds">
+                00
+              </span>
+
+              <span class="lovecounter-label"> Seconds </span>
+            </div>
+          </div>
+
+          <div class="lovecounter-start-date">
+            <span class="lovecounter-start-heart"> ♥ </span>
+
+            <span class="lovecounter-start-label"> Our story began on </span>
+
+            <strong class="lovecounter-start-value" id="lovecounterStartDate">
+              June 20, 2023
+            </strong>
+          </div>
+
+          <p class="lovecounter-message">
+            And every moment since then has been another beautiful page in our
+            story.
+          </p>
+
+          <div class="lovecounter-love-line">
+            <span>♥</span>
+            <span>Forever & Always</span>
+            <span>♥</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="lovecounter-stats">
+        <div class="lovecounter-stat-card">
+          <span class="lovecounter-stat-icon"> ♥ </span>
+
+          <strong class="lovecounter-stat-number" id="lovecounterTotalDays">
+            0
+          </strong>
+
+          <span class="lovecounter-stat-label"> Days Together </span>
+        </div>
+
+        <div class="lovecounter-stat-card">
+          <span class="lovecounter-stat-icon"> ♡ </span>
+
+          <strong class="lovecounter-stat-number" id="lovecounterTotalHours">
+            0
+          </strong>
+
+          <span class="lovecounter-stat-label"> Hours Together </span>
+        </div>
+
+        <div class="lovecounter-stat-card">
+          <span class="lovecounter-stat-icon"> ✦ </span>
+
+          <strong class="lovecounter-stat-number" id="lovecounterTotalMinutes">
+            0
+          </strong>
+
+          <span class="lovecounter-stat-label"> Minutes Together </span>
+        </div>
+
+        <div class="lovecounter-stat-card">
+          <span class="lovecounter-stat-icon"> ∞ </span>
+
+          <strong class="lovecounter-stat-number"> ∞ </strong>
+
+          <span class="lovecounter-stat-label"> Love Forever </span>
+        </div>
+      </section>
+
+      <section class="lovecounter-bottom">
+        <span class="lovecounter-bottom-heart"> ♥ </span>
+
+        <p class="lovecounter-bottom-text">
+          No matter how much time passes, I will always choose you.
+        </p>
+
+        <span class="lovecounter-bottom-heart"> ♥ </span>
+      </section>
+    </main>
+
+    <script src="lovecounter.js"></script>
+  </body>
+</html>

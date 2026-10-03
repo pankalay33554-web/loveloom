@@ -1,0 +1,449 @@
+.loveletter-body {
+  margin: 0;
+  padding: 0;
+  background: #fff9f6;
+  color: #8f4658;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.loveletter-navbar {
+  width: 100%;
+  min-height: 74px;
+  padding: 0 7%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 249, 246, 0.97);
+  border-bottom: 1px solid #f1dce2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.loveletter-logo {
+  color: #c95c72;
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.loveletter-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.loveletter-nav-link {
+  color: #8f4658;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.loveletter-nav-link:hover {
+  color: #c95c72;
+}
+
+.loveletter-active {
+  color: #c95c72;
+  font-weight: 700;
+}
+
+.loveletter-menu-btn {
+  display: none;
+  border: none;
+  background: transparent;
+  color: #c95c72;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.loveletter-main {
+  min-height: calc(100vh - 74px);
+  padding: 60px 7% 60px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(233, 166, 181, 0.2),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 70%,
+      rgba(232, 221, 240, 0.3),
+      transparent 27%
+    ),
+    #fff9f6;
+}
+
+.loveletter-header {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  animation: loveletterHeaderAnimation 0.9s ease;
+}
+
+.loveletter-heading-heart {
+  color: #c95c72;
+  font-size: 22px;
+  animation: loveletterHeartbeat 1.5s infinite;
+}
+
+.loveletter-title {
+  margin: 5px 0 10px;
+  color: #8f4658;
+  font-family: Georgia, serif;
+  font-size: 48px;
+}
+
+.loveletter-subtitle {
+  margin: 0;
+  color: #a76b7b;
+  font-size: 15px;
+}
+
+.loveletter-content {
+  min-height: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.loveletter-envelope-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loveletter-envelope {
+  width: 420px;
+  height: 290px;
+  position: relative;
+  animation: loveletterFloating 4s ease-in-out infinite;
+}
+
+.loveletter-back {
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e9a6b5;
+  border-radius: 10px 10px 15px 15px;
+  box-shadow: 0 20px 45px rgba(143, 70, 88, 0.16);
+  z-index: 1;
+}
+
+.loveletter-paper {
+  width: 360px;
+  height: 330px;
+  position: absolute;
+  left: 30px;
+  bottom: 15px;
+  background: #fffdfb;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(130px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.9s ease;
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(143, 70, 88, 0.15);
+}
+
+.loveletter-envelope.loveletter-open .loveletter-paper {
+  opacity: 1;
+  transform: translateY(-80px);
+  z-index: 7;
+}
+
+.loveletter-paper-inner {
+  height: 100%;
+  padding: 25px 32px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.loveletter-paper-heart {
+  color: #c95c72;
+  font-size: 19px;
+  animation: loveletterHeartbeat 1.5s infinite;
+}
+
+.loveletter-paper-title {
+  margin: 8px 0 18px;
+  color: #8f4658;
+  font-family: Georgia, serif;
+  font-size: 23px;
+}
+
+.loveletter-greeting {
+  margin: 0 0 12px;
+  color: #8f4658;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+.loveletter-paragraph {
+  margin: 0 0 13px;
+  color: #9f6877;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.loveletter-signature {
+  margin: 18px 0 0;
+  color: #c95c72;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.loveletter-front {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-left: 210px solid transparent;
+  border-right: 210px solid transparent;
+  border-bottom: 145px solid #d98298;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.loveletter-heart-button {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 178px;
+  top: 150px;
+  padding: 0;
+  border: 6px solid #fff9f6;
+  border-radius: 50%;
+  background: #c95c72;
+  color: #fff9f6;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 20;
+  box-shadow: 0 8px 25px rgba(143, 70, 88, 0.25);
+  transition:
+    transform 0.3s ease,
+    opacity 0.4s ease;
+}
+
+.loveletter-heart-button:hover {
+  transform: scale(1.12);
+}
+
+.loveletter-heart-button:active {
+  transform: scale(0.95);
+}
+
+.loveletter-envelope.loveletter-open .loveletter-heart-button {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+}
+
+.loveletter-hint {
+  margin: 35px 0 0;
+  color: #a76b7b;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  animation: loveletterHintAnimation 2s infinite;
+}
+
+.loveletter-footer-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 5;
+}
+
+.loveletter-footer-text {
+  margin: 0;
+  color: #a76b7b;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.loveletter-footer-heart {
+  color: #c95c72;
+  animation: loveletterHeartbeat 1.5s infinite;
+}
+
+.loveletter-floating-heart {
+  position: absolute;
+  color: rgba(201, 92, 114, 0.25);
+  pointer-events: none;
+}
+
+.loveletter-heart-one {
+  left: 8%;
+  top: 30%;
+  animation: loveletterHeartFloat 6s infinite;
+}
+
+.loveletter-heart-two {
+  left: 20%;
+  top: 65%;
+  animation: loveletterHeartFloat 5s infinite 1s;
+}
+
+.loveletter-heart-three {
+  right: 9%;
+  top: 35%;
+  animation: loveletterHeartFloat 7s infinite 1.5s;
+}
+
+.loveletter-heart-four {
+  right: 20%;
+  top: 70%;
+  animation: loveletterHeartFloat 5.5s infinite 0.5s;
+}
+
+@keyframes loveletterHeaderAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loveletterFloating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes loveletterHeartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.18);
+  }
+}
+
+@keyframes loveletterHintAnimation {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes loveletterHeartFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translateY(-35px);
+    opacity: 0.65;
+  }
+}
+
+@media (max-width: 950px) {
+  .loveletter-menu-btn {
+    display: block;
+  }
+
+  .loveletter-nav-links {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: #fff9f6;
+    border-bottom: 1px solid #f2dce2;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+  }
+
+  .loveletter-nav-links.loveletter-menu-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .loveletter-title {
+    font-size: 38px;
+  }
+
+  .loveletter-envelope {
+    width: 320px;
+    height: 240px;
+  }
+
+  .loveletter-back {
+    height: 185px;
+  }
+
+  .loveletter-front {
+    border-left-width: 160px;
+    border-right-width: 160px;
+    border-bottom-width: 120px;
+  }
+
+  .loveletter-paper {
+    width: 280px;
+    height: 310px;
+    left: 20px;
+  }
+
+  .loveletter-envelope.loveletter-open .loveletter-paper {
+    transform: translateY(-85px);
+  }
+  .loveletter-heart-button {
+    left: 128px;
+    top: 122px;
+  }
+
+  .loveletter-paper-inner {
+    padding: 22px;
+  }
+
+  .loveletter-paper-title {
+    font-size: 20px;
+  }
+}
